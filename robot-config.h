@@ -7,6 +7,9 @@ extern motor L1;
 extern motor L2;
 extern motor R1;
 extern motor R2;
+extern motor intakeMotorLeft;
+extern motor intakeMotorRight;
+extern motor clawMotor;
 /*
 TO ADD A DEVICE:
 
