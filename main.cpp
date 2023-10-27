@@ -84,6 +84,9 @@ void usercontrol(void) {
     // This is the main execution loop for the user control program.
     // Each time through the loop your program should update motor + servo
     // values based on feedback from the joysticks.
+    intake();
+    claw();
+      
     int axis3_value = Controller1.Axis3.position(percent);
     int axis1_value = Controller1.Axis1.position(percent);
     
