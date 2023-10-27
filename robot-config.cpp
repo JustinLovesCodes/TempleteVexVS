@@ -4,6 +4,13 @@ using namespace vex;
 
 brain Brain;
 
+// Device Constructors
+controller Controller1 = controller(primary);
+motor L1 = motor(PORT1, ratio18_1, false);
+motor L2 = motor(PORT2, ratio18_1, false);
+motor R1 = motor(PORT9, ratio18_1, false);
+motor R2 = motor(PORT10, ratio18_1, false);
+
 /*
 NAME = Name of the Device
 
@@ -55,7 +62,7 @@ Brain.ThreeWirePort.G & Brain.ThreeWirePort.H = Brain.ThreeWirePort.G
 PNEUMATICS
 digital_in NAME = digital_in(3WIREPORT);
 */
-
+bool RemoteControlCodeEnabled = true;
 
 void vexcodeInit( void ) {
   // nothing to initialize
