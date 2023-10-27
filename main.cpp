@@ -25,7 +25,27 @@ competition Competition;
 /*  function is only called once after the V5 has been powered on and        */
 /*  not every time that the robot is disabled.                               */
 /*---------------------------------------------------------------------------*/
-
+int intake(){  
+    //Intake Code
+  if(Controller1.ButtonL1.pressing()){
+      intakeMotorLeft.spin(forward);
+      intakeMotorRight.spin(forward);
+  } else if(Controller1.ButtonL2.pressing()){
+      intakeMotorLeft.spin(reverse);
+      intakeMotorRight.spin(reverse);
+  } else{
+      intakeMotorLeft.stop();
+      intakeMotorRight.stop();
+  }
+  int claw(){
+    if(Controller1.ButtonR1.pressing()){
+      clawMotor.spin(forward);
+    } else if(Controller1.ButtonR2.pressing()){
+      clawMotor.spin(reverse);
+    } else {
+        clawMotor.stop();
+    }
+  }
 void pre_auton(void) {
 
   // All activities that occur before the competition starts
