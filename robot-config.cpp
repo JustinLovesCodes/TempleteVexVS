@@ -10,7 +10,9 @@ motor L1 = motor(PORT1, ratio18_1, false);
 motor L2 = motor(PORT2, ratio18_1, false);
 motor R1 = motor(PORT9, ratio18_1, false);
 motor R2 = motor(PORT10, ratio18_1, false);
-
+motor intakeMotorLeft = motor(PORT13, ratio18_1, false);
+motor intakeMotorRight = motor(PORT14, ratio18_1, false);
+motor clawMotor = motor(PORT15, ratio18_1, false);
 /*
 NAME = Name of the Device
 
