@@ -1,7 +1,12 @@
 using namespace vex;
 
 extern brain Brain;
-
+// Devices
+extern controller Controller1;
+extern motor L1;
+extern motor L2;
+extern motor R1;
+extern motor R2;
 /*
 TO ADD A DEVICE:
 
